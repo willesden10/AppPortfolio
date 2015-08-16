@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <TextView android:text="@string/nanodree_aps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/spotify"
+            android:text="@string/spotify_streamer"
+            style="@style/MyButton"
+            android:background="#fff3e0"
+            android:onClick="buttonOnClickListener"/>
+
+        <Button
+            android:id="@+id/football"
+            android:text="@string/football_scores"
+            style="@style/MyButton"
+            android:background="#ffe0b2"
+            android:onClick="buttonOnClickListener"/>
+
+        <Button
+            android:id="@+id/library"
+            android:text="@string/library_app"
+            style="@style/MyButton"
+            android:background="#ffcc80"
+            android:onClick="buttonOnClickListener"/>
+
+        <Button
+            android:id="@+id/build"
+            android:text="@string/build_it_bigger"
+            style="@style/MyButton"
+            android:background="#ffb74d"
+            android:onClick="buttonOnClickListener"/>
+
+        <Button
+            android:id="@+id/xyz"
+            android:text="@string/xyz_reader"
+            style="@style/MyButton"
+            android:background="#ffa726"
+            android:onClick="buttonOnClickListener"/>
+
+        <Button
+            android:id="@+id/capstone"
+            android:text="@string/capstone"
+            style="@style/MyButton"
+            android:background="#f57c00"
+            android:onClick="buttonOnClickListener"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
