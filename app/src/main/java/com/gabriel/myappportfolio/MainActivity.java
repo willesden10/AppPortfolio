@@ -44,12 +44,9 @@ public class MainActivity extends Activity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("About");
         builder.setMessage("              Gabriel Pineda\nAndroid Developer Nanodegree");
-        builder.setNeutralButton("Ok", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                //This method does nothing, it's just to show the neutral button.
-            }
-        });
+
+        //This is only to show the neutral button for aesthetic reasons, it has no function.
+        builder.setNeutralButton("Ok", null);
         return builder.create();
     }
 
